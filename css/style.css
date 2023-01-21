@@ -707,39 +707,6 @@ background-color: var(--body-color);
 .swiper-pagination-bullet{
 	outline: none;
 }
-/* .portfolio__modal{
-	position: fixed;
-	top : 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	background-color: rgba(0, 0, 0, .5);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 0 1rem;
-	z-index: var(--z-modal);
-  opacity: 0;
-	visibility: hidden;
-	transition: .3s;
-	cursor: pointer;
-}
-
-.portfolio__modal-content{
-	position: relative;
-	background-color: var(--container-color);
-	padding: 1.5rem;
-	border-radius: .5rem;
-}
-.portfolio__content:hover{
-	background: var(--first-color);
-} 
-.portfolios__content:hover .portfolio__icon ,.portfolio__content:hover .portfolio__title,.portfolio__content:hover .portfolio__button{
-	color: #fff;
-}
-.portfolio__modal-portfolio{
-	row-gap: 1rem;
-}
 
 /*==================== PROJECT IN MIND ====================*/
 .project{
@@ -764,39 +731,6 @@ background-color: var(--body-color);
 	width: 232px;
 	height: auto;
 	justify-self: center;
-}
-
-/*==================== TESTIMONIAL ====================*/
-.testimonial__data,
-.testimonial__hreader{
-	display: flex;
-}
-.testimonial__data{
-	justify-content: space-between;
-	margin-bottom: var(--mb-1);
-}
-.testimonial__img{
-	width: 60px;
-	height: 60px;
-	border-radius: 50%;
-	margin-right: var(--mb-0-75);
-}
-.testimonial__name{
-	font-size: var(--h3-font-size);
-	font-weight: var(--font-medium);
-}
-.testimonial__client{
-	font-size: var(--small-font-size);
-	color: var(--text-color-light);
-}
-.testimonial__description{
-	margin-bottom: var(--mb-2-5);
-}
-.testimonial__icon-star{
-	color: var(--first-color);
-}
-.swiper-container .swiper-pagination-testimonial{
-	bottom: 0;
 }
 /*==================== CONTACT ME ====================*/
 .contact__container{
@@ -960,19 +894,6 @@ background-color: var(--body-color);
 	}
 	.project__img{
 		width: 200px;
-	}
-	.testimonial__data,
-	.testimonial__header{
-		flex-direction: column;
-		align-items: center;
-	}
-	.testimonial__img{
-		margin-right: 0;
-		margin-bottom: var(--mb-0-25);
-	}
-	.testimonial__data,
-	.testimonial__description{
-		text-align: center;
 	}
 }
 
