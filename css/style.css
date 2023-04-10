@@ -313,7 +313,7 @@ background-color: var(--body-color);
 	margin-bottom: var(--mb-0-75);
 }
 .home__subtitle > span{
-	font-size: var(--p-font-size);
+	font-size: var(--h2-font-size);
 	color: var(--first-color);
 }
 .home__description{
