@@ -89,19 +89,42 @@ modalCloses.forEach((modalClose, i )=>{
   })
 })
 /*==================== PORTFOLIO SWIPER  ====================*/
-let swiperPortfolio = new Swiper('.portfolio__container', {
-  cssMode: true,
-  loop: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable : true,
-  },
 
-});
+// Load JSON data using AJAX
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'portfolio.json', true);
+xhr.onload = function() {
+  if (xhr.readyState === 4 && xhr.status === 200) {
+    var data = JSON.parse(xhr.responseText);
+    // Use the data to populate Swiper slides
+    var swiper = new Swiper('.portfolio__container', {
+      // Set Swiper options
+      cssMode: true,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        clickable: true,
+      },
+      on: {
+        init: function () {
+          var swiperWrapper = document.querySelector(".swiper-wrapper");
+          data.forEach(function (item, books) {
+            var swiperSlide = document.createElement('div');
+            swiperSlide.className = 'portfolio__content grid swiper-slide';
+            swiperSlide.innerHTML = '<img src="' + item.image + '" alt="' + item.title + '" class="portfolio__img"><div class="portfolio__data"><h3 class="portfolio__title">' + item.title + '</h3><p class="portfolio__description">' + item.description + '</p></div>';
+            swiperWrapper.appendChild(swiperSlide);
+          });
+        },
+      },
+    });
+  }
+};
+xhr.send();
 /*==================== Contact Send Message ====================*/
 window.onload = function() {
   document.getElementById('contact-form').addEventListener('submit', function(event) {
