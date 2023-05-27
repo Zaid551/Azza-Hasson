@@ -29,22 +29,17 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
 /*==================== ACCORDION SKILLS ====================*/
-const skillsContent = document.getElementsByClassName('skills__content'),
-      skillsHeader = document.querySelectorAll('.skills__header')
-function toggleSkills(){
-  let itemClass = this.parentNode.ClassName
+const showDropdown = (content, button) =>{
+  const dropdownContent = document.getElementById(content),
+        dropdownButton = document.getElementById(button)
 
-  for(i = 0; i < skillsContent.length; i++){
-    skillsContent[i].className = 'skills__content skills__close'
-  }
-  if(itemClass === 'skills__content skills__close'){
-    this.parentNode.className = 'skills__content skills__open'
-  }
-  
+  dropdownButton.addEventListener('click', () =>{
+     // We add the show-dropdown class, so that the menu is displayed
+     dropdownContent.classList.toggle('show-dropdown')
+  })
 }
-skillsHeader.forEach((el) =>{
-  el.addEventListener('click', toggleSkills)
-})
+
+showDropdown('dropdown-content','dropdown-button')
 /*==================== QUALIFICATION TABS ====================*/
 const tabs = document.querySelectorAll('[data-target]'),
       tabContents = document.querySelectorAll('[data-content]')
