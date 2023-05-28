@@ -442,6 +442,7 @@ background-color: var(--body-color);
   background-color: transparent;
   padding: 1.25rem;
 	column-gap: .5rem;
+	cursor: pointer;
 }
 .skills__icons{
 	font-size: 2rem;
