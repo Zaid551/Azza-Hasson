@@ -312,8 +312,8 @@ background-color: var(--body-color);
 	font-weight: var(--font-medium);
 	margin-bottom: var(--mb-0-75);
 }
-.home__subtitle > span{
-	font-size: var(--h2-font-size);
+.home__title > span{
+	/* font-size: var(--h2-font-size); */
 	color: var(--first-color);
 }
 .home__description{
