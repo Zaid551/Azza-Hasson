@@ -26,20 +26,43 @@ function linkAction(){
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+/*==================== About Counter ====================*/
+const aboutSection = document.querySelector("#about"),
+      nums = document.querySelectorAll(".about__info .num");
+let started = false; // function started? No
 
-
+  window.onscroll = function (){
+    if(window.scrollY >= aboutSection.offsetTop){
+      if(!started){
+        nums.forEach((num) => startCount(num));
+      }
+      started = true;
+    }
+  };
+  function startCount(el){
+    let goal = el.dataset.goal;
+    let count = setInterval(()=>{
+      el.textContent++;
+      if(el.textContent == goal){
+        clearInterval(count);
+      }
+    }, 2000 / goal);
+}
 /*==================== ACCORDION SKILLS ====================*/
 const showDropdown = (content, button) =>{
   const dropdownContent = document.getElementById(content),
-        dropdownButton = document.getElementById(button)
+        dropdownButton = document.getElementById(button),
+        spans = document.querySelectorAll(".skills__bar span");
 
   dropdownButton.addEventListener('click', () =>{
      // We add the show-dropdown class, so that the menu is displayed
-     dropdownContent.classList.toggle('show-dropdown')
+     dropdownContent.classList.toggle('show-dropdown');
+     spans.forEach((span) => {
+      span.style.width = span.dataset.width;
+    })
   })
 }
-
-showDropdown('dropdown-content','dropdown-button')
+showDropdown('dropdown-content','dropdown-button');
 /*==================== QUALIFICATION TABS ====================*/
 const tabs = document.querySelectorAll('[data-target]'),
       tabContents = document.querySelectorAll('[data-content]')

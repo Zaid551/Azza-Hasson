@@ -502,13 +502,16 @@ background-color: var(--body-color);
 	background-color: var(--first-color);
 }
 .skills__list .skills__arabic{
-	width: 95%;
+	width: 0;
+	transition: width .9s linear;
 }
 .skills__list .skills__english{
-	width: 90%;
+	width: 0;
+	transition: width .9s linear;
 }
 .skills__list .skills__spanish{
-	width: 60%;
+	width: 0;
+	transition: width .9s linear;
 }
 .skills__close {
   opacity: 0;
