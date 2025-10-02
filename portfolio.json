@@ -1,74 +1,143 @@
 [
   {
     "id": 1,
-    "image": "img/roza.jpg",
-    "title": "Rosa Luxemburg Speaks",
-    "description": "Rosa Luxemburg acted and wrote as a proletarian revolutionist. Rosa Luxemburg Speaks takes us inside the political battles between revolution and class collaboration that still shape the modern workers movement."
+    "image": "img/The_Nonviolence_Handbook.jpg",
+    "title": "The Nonviolence Handbook",
+    "author": "Michael Nagler",
+    "publisher": "Dar Ma'aber",
+    "year": 2015,
+    "role": "Arabic Translation",
+    "description": "A practical guide to using nonviolence as a powerful tool for social and political change."
   },
   {
     "id": 2,
-    "image": "img/world_without_end.jpg",
-    "title": "World Without End",
-    "description": "World Without End takes place in the same town of Kingsbridge, two centuries after the townspeople finished building the exquisite Gothic cathedral that was at the heart of The Pillars of the Earth."
-  },
+    "image": "img/ddd.png",
+    "title": "Save Me the Waltz",
+    "author": "Zelda Fitzgerald",
+    "publisher": "Dar AlMada",
+    "year": 2018,
+    "role": "Arabic Translation",
+    "description": "Zelda Fitzgerald's semi-autobiographical tale of ambition, art, and the struggles of love."
+  },  
   {
     "id": 3,
-    "image": "img/A_Column_of_Fire.jpg",
-    "title": "A Column of Fire",
-    "description": "In 1558, the ancient stones of Kingsbridge Cathedral look down on a city torn apart by religious conflict. As power in England shifts precariously between Catholics and Protestants, royalty and commoners clash, testing friendship, loyalty, and love."
+    "image": "img/diana.jpg",
+    "title": "Imagining Diana",
+    "author": "Diane Clehane",
+    "publisher": "Dar AlMada",
+    "year": 2018,
+    "role": "Arabic Translation",
+    "description": "A daring “what if” novel re-envisioning Princess Diana's life had she survived."
   },
   {
     "id": 4,
-    "image": "img/Nonviolence_Handbook.jfif",
-    "title": "A Guide for Practical Action The Nonviolence Handbook",
-    "description": "Despite the fact that two of the 20th century’s most monumental revolutions achieved their aims through nonviolent action, the world continues to view nonviolence as a passive, ineffectual tactic."
+    "image": "img/The_Dialectic_of_Sex.jpg",
+    "title": "The Dialectic of Sex: The Case for Feminist Revolution",
+    "author": "Shulamith Firestone",
+    "publisher": "Dar Attakwin",
+    "year": 2019,
+    "role": "Arabic Translation",
+    "description": "The Case for Feminist Revolution: A radical feminist manifesto calling for liberation from patriarchal systems."
   },
   {
     "id": 5,
-    "image": "img/ddd.png",
-    "title": "Save Me the Waltz",
-    "description": "One of the great literary curios of the 20th century, Save Me the Waltz is the first and only novel by Zelda Fitzgerald. During the years when her husband F. Scott Fitzgerald was working on Tender is the Night—which many critics consider his masterpiece—Zelda Fitzgerald was preparing her own story."
+    "image": "img/The_Heart_Is_a_Lonely_Hunter.jpg",
+    "title": "The Heart Is a Lonely Hunter",
+    "author": "Carson McCullers",
+    "publisher": "Dar AlMada",
+    "year": 2019,
+    "role": "Arabic Translation",
+    "description": " A Southern classic exploring loneliness, connection, and the human spirit."
   },
   {
     "id": 6,
-    "image": "img/diana.jpg",
-    "title": "Imagining Diana",
-    "description": "In Imagining Diana, the novel by New York Times bestselling author Diane Clehane, Princess Diana survives the 1997 car crash that led to her tragic death."
+    "image": "img/A_Column_of_Fire.jpg",
+    "title": "A Column of Fire",
+    "author": "Ken Follett",
+    "publisher": "Dar AlMada",
+    "year": 2020,
+    "role": "Arabic Translation",
+    "description": "A sweeping historical epic of love, faith, and power in 16th-century Europe."
   },
+
   {
     "id": 7,
-    "image": "img/The_Dialectic_of_Sex.jpg",
-    "title": "The Dialectic of Sex: The Case for Feminist Revolution",
-    "description": "”No one can understand how feminism has evolved without reading this radical, inflammatory second-wave landmark.” Naomi WolfOriginally published in 1970. The Dialectic of Sex was the first book of the women's liberation movement to put forth a feminist theory of politics."
+    "image": "img/Al_Houdhoud_Final_to_Print.png",
+    "title": "Bird Summons",
+    "author": "Leila Aboulela",
+    "publisher": "Dar AlSaqi",
+    "year": 2021,
+    "role": "Arabic Translation",
+    "description": "Three Muslim women embark on a journey through Scotland to confront identity and belonging."
   },
   {
     "id": 8,
-    "image": "img/The_Heart_Is_a_Lonely_Hunter.jpg",
-    "title": "The Heart Is a Lonely Hunter",
-    "description": "Carson McCullers' prodigious first novel was published to instant acclaim when she was just twenty-three. Set in a small town in the middle of the deep South, it is the story of John Singer, a lonely deaf-mute, and a disparate group of people who are drawn towards his kind, sympathetic nature."
+    "image": "img/theNoteofDarkness.jpeg",
+    "title": "The Note of Darkness",
+    "author": "Fajr Yacoub",
+    "publisher": "Dar AlHaderoun",
+    "year": 2022,
+    "role": "English Translation",
+    "description": "In this world that is made of images of dreams and nightmares, there are specific points that are surprising when they appear written in one of the lines, because they indicate what is real."
   },
   {
     "id": 9,
-    "image": "img/Al_Houdhoud_Final_to_Print.png",
-    "title": "Bird Summons",
-    "description": "In her adventurous new novel, New York Times Notable author Leila Aboulela delivers a lively portrait of three women who embark on a journey of self-discovery while grappling with the conflicting demands of family, duty, and faith."
-  },
+    "image": "img/world_without_end.jpg",
+    "title": "World Without End",
+    "author": "Ken Follett",
+    "publisher": "Dar AlMada",
+    "year": 2022,
+    "role": "Arabic Translation",
+    "description": "The sequel to Pillars of the Earth, weaving science, power, and passion in the Middle Ages."
+  }, 
   {
     "id": 10,
     "image": "img/Women_in_Cuba.jpg",
-    "title": "Women in Cuba: The Making of a Revolution within the Revolution",
-    "description": "Collection of four interviews by different journalists with Vilma Espain, Asela de los Santos and Yolanda Ferrer from 1975-2008 and Military Order No. 50 establishing Department of Education in Second Front, Nov. 2, 1958."
+    "title": "Women of Cuba",
+    "author": "Mary-Alice Waters",
+    "publisher": "Dar Attakwin",
+    "year": 2021,
+    "role": "Arabic Translation",
+    "description": " Vivid portraits of Cuban women's resilience, politics, and everyday struggles."
   },
   {
     "id": 11,
-    "image": "img/theNoteofDarkness.jpeg",
-    "title": "The Note of Darkness",
-    "description": "In this world that is made of images of dreams and nightmares, there are specific points that are surprising when they appear written in one of the lines, because they indicate what is real.<br> Is it a novel about the last experience of exile? It is about our time, which has become difficult to represent the facts?!"
+    "image": "img/roza.jpg",
+    "title": "Rosa Luxemburg Speaks",
+    "author": "Mary-Alice Waters",
+    "publisher": "Dar Attakwin",
+    "year": 2022,
+    "role": "Arabic Translation",
+    "description": "Essential writings of the revolutionary thinker on justice, freedom, and equality."
   },
   {
     "id": 12,
+    "image": "img/Pillars_of_the_Earth.jpg",
+    "title": "Pillars of the Earth",
+    "author": "Ken Follett",
+    "publisher": "Dar AlMada",
+    "year": 2023,
+    "role": "Arabic Translation",
+    "description": "A monumental saga of building a cathedral amid love, betrayal, and political intrigue."
+  },
+  {
+    "id": 13,
     "image": "img/The_Tattooist_of_Auschwitz.jpg",
     "title": "The Tattooist of Auschwitz",
-    "description": "The Tattooist of Auschwitz is a 2018 Holocaust novel by New Zealand novelist Heather Morris. The book tells the story of how Slovakian Jew Lale Sokolov, who was imprisoned at Auschwitz in 1942, fell in love with a girl he was tattooing at the concentration camp. The story is based on the real lives of Sokolov and his wife, Gita Furman."
+    "author": "Heather Morris",
+    "publisher": "Dar AlMada",
+    "year": 2023,
+    "role": "Arabic Translation",
+    "description": "A moving true story of survival and love in the face of the Holocaust."
+  },
+  {
+    "id": 14,
+    "image": "img/Hawam.jpg",
+    "title": "Nightcrawling",
+    "author": "Leila Mottley",
+    "publisher": "Dar Fawasel",
+    "year": 2024,
+    "role": "Arabic Translation",
+    "description": " A bold, haunting novel of poverty, corruption, and a young woman's fight to survive."
   }
 ]

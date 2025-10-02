@@ -134,35 +134,92 @@ xhr.onload = function() {
           data.forEach(function (item, books) {
             var swiperSlide = document.createElement('div');
             swiperSlide.className = 'portfolio__content grid swiper-slide';
-            swiperSlide.innerHTML = '<img src="' + item.image + '" alt="' + item.title + '" class="portfolio__img"><div class="portfolio__data"><h3 class="portfolio__title">' + item.title + '</h3><p class="portfolio__description">' + item.description + '</p></div>';
+            swiperSlide.innerHTML = `
+            <img src=" ${item.image}" alt= "${item.title}" class="portfolio__img">
+            <div class="portfolio__data">
+              <h3 class="book_title"> ${item.title}</h3>
+              <p class="book_author"><strong>Author:</strong> ${item.author}</p>
+              <p class="book_publisher"><strong>Publisher:</strong> ${item.publisher}</p>
+              <p class="book_year"><strong>Year:</strong> ${item.year}</p>
+              <p class="book_role"><strong>Role:</strong> ${item.role}</p>
+              <p class="book_description"><strong>Description:</strong> ${item.description} </p>
+            </div>`;
             swiperWrapper.appendChild(swiperSlide);
           });
         },
       },
     });
-    swiper.slideTo(2);   // Navigates to the third slide
+    swiper.slideTo(0);   // Navigates to the First slide
     swiper.update();     // Updates the Swiper instance
     var activeSlide = swiper.slides[swiper.activeIndex]; 
   }
 };
 
 xhr.send();
+/*==================== Articles ====================*/
+async function loadArticles() {
+  const response = await fetch('articles.json');
+  const articles = await response.json();
+  const container = document.getElementById('articles-container');
 
-/*==================== Contact Send Message ====================*/
-window.onload = function() {
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
-      event.preventDefault();
-      // generate a five digit number for the contact_number variable
-      this.contact_number.value = Math.random() * 100000 | 0;
-      // these IDs from the previous steps
-      emailjs.sendForm('contact_service', 'contact_form', this)
-          .then(function() {
-              console.log('SUCCESS!');
-          }, function(error) {
-              console.log('FAILED...', error);
-          });
+  articles.forEach(article => {
+    const slide = document.createElement('div');
+    slide.classList.add('swiper-slide');
+    slide.innerHTML = `
+      <div class="article-card simple">
+        <div class="article-date">${article.date}</div>
+        <div class="article-content">
+          <h3 class="article-title">${article.title}</h3>
+          <p class="article-source"><strong>${article.source}</strong></p>
+          <p class="article-issue">${article.issue}</p>
+        </div>
+      </div>`
+    ;
+    container.appendChild(slide);
+  });
+
+  new Swiper(".articlesSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".swiper-button-next2",
+      prevEl: ".swiper-button-prev2",
+    },
+    pagination: {
+      el: ".swiper-pagination2",
+      clickable: true,
+    },
+    breakpoints: {
+      768: { slidesPerView: 1 },
+      1024: { slidesPerView: 2 }
+    }
   });
 }
+
+loadArticles();
+
+/*==================== Contact Send Message ====================*/
+  // ربط الفورم مع EmailJS
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault(); // منع إعادة تحميل الصفحة
+
+    const templateParams = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      subject: document.getElementById("subject").value,
+      message: document.getElementById("message").value,
+    };
+
+    emailjs.send("service_h2oygx8", "template_7qdn4xl", templateParams)
+      .then(() => {
+        alert("Email Sent Successfully!");
+        document.getElementById("contact-form").reset(); // تفريغ الفورم
+      })
+      .catch((error) => {
+        console.error("Error Sending Email:", error);
+        alert("Failed to Send Email. Please Try Again.");
+      });
+  });
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
