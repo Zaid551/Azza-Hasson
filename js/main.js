@@ -110,7 +110,7 @@ modalCloses.forEach((modalClose, i )=>{
 
 // Load JSON data using AJAX
 var xhr = new XMLHttpRequest();
-xhr.open('GET', 'portfolio.json', true);
+xhr.open('GET', './json/portfolio.json', true);
 xhr.onload = function() {
   if (xhr.readyState === 4 && xhr.status === 200) {
     var data = JSON.parse(xhr.responseText);
@@ -158,7 +158,7 @@ xhr.onload = function() {
 xhr.send();
 /*==================== Articles ====================*/
 async function loadArticles() {
-  const response = await fetch('articles.json');
+  const response = await fetch('./json/articles.json');
   const articles = await response.json();
   const container = document.getElementById('articles-container');
 
