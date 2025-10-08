@@ -312,6 +312,46 @@ background-color: var(--body-color);
 	font-weight: var(--font-medium);
 	margin-bottom: var(--mb-0-75);
 }
+.text-container{
+  display: flex;
+}
+.text-container .dynamic-text{
+  margin-left: var(--mb-0-75);;
+  height: 2rem;
+  line-height: 2rem;
+  overflow: hidden;
+}
+.text-container .dynamic-text li{
+  color: var(--first-color);
+  position: relative;
+  top: 0;
+  animation: slide 8s steps(4) infinite;
+}
+.text-container .dynamic-text li span{
+  position: relative;
+  margin: 2px 0;
+  line-height: 2rem;
+}
+.text-container .dynamic-text li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid var(--first-color);
+  animation: typing 2s steps(12) infinite;
+  background-color: var(--body-color);
+}
+@keyframes slide {
+  100%{
+    top: -8rem;
+  }
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 10px);
+  }
+}
 .home__title > span{
 	color: var(--first-color);
 }
