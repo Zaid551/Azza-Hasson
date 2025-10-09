@@ -316,9 +316,10 @@ background-color: var(--body-color);
   display: flex;
 }
 .text-container .dynamic-text{
-  margin-left: var(--mb-0-75);;
-  height: 2rem;
-  line-height: 2rem;
+  margin-left: var(--mb-0-5);
+	margin-top: 2px;
+  height: 1.75rem;
+  line-height: 1.75rem;
   overflow: hidden;
 }
 .text-container .dynamic-text li{
@@ -330,7 +331,7 @@ background-color: var(--body-color);
 .text-container .dynamic-text li span{
   position: relative;
   margin: 2px 0;
-  line-height: 2rem;
+  line-height: 1.75rem;
 }
 .text-container .dynamic-text li span::after{
   content: "";
@@ -344,7 +345,7 @@ background-color: var(--body-color);
 }
 @keyframes slide {
   100%{
-    top: -8rem;
+    top: -7rem;
   }
 }
 @keyframes typing {
